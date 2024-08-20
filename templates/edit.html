@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+
+{% block head %}
+<title>Crud app</title>
+{% endblock %}
+{% block body %}
+<div class="content">
+    <h1>update Task</h1>
+    <form action="/edit/{{task.id}}" method="Post">
+        <input type="text" name="content" value="{{task.content}}" id="contant" />
+        <input type="submit" value="update" id="btn_add" />
+    </form>
+</div>
+{% endblock %}
